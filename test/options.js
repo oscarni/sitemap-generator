@@ -14,5 +14,7 @@ test('should extend default options with user options', function (t) {
   t.deepEqual(generator.options, {
     stripQuerystring: true,
     restrictToBasepath: false,
+    maxEntriesPerFile: 50000,
+    crawlerMaxDepth: 0,
   }, 'objects are equal');
 });
